@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <p>
+            I am not perfect, but I promise to always try my best to make things right. ... <br>
+            <i class="ri-heart-2-fill" id="em"></i>
+            <i class="ri-heart-2-fill" id="em"></i>
+            <i class="ri-heart-2-fill" id="em"></i>
+            <h1>
+                Sorry
+            </h1>
+            <h1>
+                From
+            </h1>
+            <h1>
+                Chotto
+            </h1>
+            <h1>
+                Babai 
+            </h1>
+        </p>
+        <img src="kukure.png" alt="" srcset="">
+        <h5>
+            Love you!❤ <br>
+            Dear Labi Dadi
+        </h5>
+    </div>
+</body>
+<script>
+var tl=gsap.timeline();
+tl.from(".main p",{
+    y:900,
+    duration:1,
+    opacity:0.9
+});
+tl.to(".main p",{
+    opacity:0,
+    delay:1,
+    duration:4
+});
+tl.from(".main h1",{
+    y:900,
+    duration:1,
+    opacity:0.9,
+    stagger: 1
+});
+tl.to(".main h1",{
+    opacity:0,
+    delay:1,
+    duration:2
+});
+tl.to(".main img",{
+    scale: 1,
+    opacity:1,
+    duration:4
+})
+
+
+
+</script>
+</html>
